@@ -1,0 +1,12 @@
+.banner {
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F3F7FA;
+}
+
+
+
+.banner img {
+    width: 500px;
+
+}
