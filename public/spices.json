@@ -1,121 +1,161 @@
 [
     {
         "name": "Black Pepper",
-        "price": "$1",
+        "price": 10,
+        "vendor": "Organic Spices Ltd",
+        "quantity": 50,
         "img": "https://i.ibb.co/dJ80qff/black-pepper-1.jpg",
         "description": "The king of all spices, the most popular spice that is used worldwide, here on the list is Black Pepper. It is no wonder that Black Pepper is loved by so many people and used by so many nations. The sharp pungent black seeds are not only good in your food but it is also good for your body. The Black Pepper boosts our metabolism which helps our body to digest food properly. It also has anti-bacterial and anti-cancer properties."
     },
     {
         "name": "Nutmeg",
-        "price": "$8",
+        "price": 10,
+        "vendor": "Organic Spices Ltd",
+        "quantity": 50,
         "img": "https://i.ibb.co/YXH7TBp/nutmeg.jpg",
         "description": "The little nut which looks a lot like a beetle nut is one of the many spices used in making garam masala. The Nutmeg is known to detoxify the liver, helps in relieving congestion, and also good for your Kidney. Intake of the spice can prevent Kidney infections and diseases."
     },
     {
         "name": "Clove",
-        "price": "$2",
+        "price": 10,
+        "vendor": "Organic Spices Ltd",
+        "quantity": 50,
         "img": "https://i.ibb.co/nPKVP6k/clove.jpg",
         "description": "Cloves had been long known for its Ayurvedic medicinal purposes. From the time of ancient India till the modern day, clove is regarded as a healthy spice with healthy benefits.. Much like cinnamon oil, clove oil is used for treating toothache, treating scrapes, bruises, and improving digestion."
     },
     {
         "name": "Cardamom",
-        "price": "$3",
+        "price": 10,
+        "vendor": "Organic Spices Ltd",
+        "quantity": 50,
         "img": "https://i.ibb.co/QHv4C2v/cordamom.jpg",
         "description": "The green Elaichi is widely used in India to flavour savoury dishes as well as sweet dishes. Some of its health benefits are combating nausea, gas, increasing our appetite, and reducing heartburn."
     },
     {
         "name": "Coriandar",
-        "price": "$4",
+        "price": 10,
+        "vendor": "Organic Spices Ltd",
+        "quantity": 50,
         "img": "https://i.ibb.co/3BXyCQs/coriandar.jpg",
         "description": "Asafoetida is a spice that has amazing properties that can treat different kinds of stomach related problems such as upset stomach, intestinal worms, intestinal gas, etc."
     },
     {
         "name": "Cumin",
-        "price": "$5",
+        "price": 10,
+        "vendor": "Organic Spices Ltd",
+        "quantity": 50,
         "img": "https://i.ibb.co/Hx3QsMt/cumin.jpg",
         "description": "Cumin or Jeera is a savoury spice which is dried and cultivated. It is known to help in digestion of food, treat insomnia, good to have it when infected with common cold and also treats skin disorders."
     },
     {
         "name": "Fenugreek",
-        "price": "$6",
+        "price": 10,
+        "vendor": "Organic Spices Ltd",
+        "quantity": 50,
         "img": "https://i.ibb.co/3BXyCQs/coriandar.jpg",
         "description": "Fenugreek is a savoury spice which goes well with meat or vegetables. The little yellow seeds contain Galactomannan which is helpful in slowing down the sugar absorption rate into our blood. It is also good for lactating mothers, people suffering from loss of taste, and anaemia."
     },
     {
         "name": "Mace",
-        "price": "$7",
+        "price": 10,
+        "vendor": "Organic Spices Ltd",
+        "quantity": 50,
         "img": "https://i.ibb.co/3p2jNCJ/mace.jpg",
         "description": "Mace is the nutmeg flower which can be used as a spice, or the oil from the mace can be used for further purposes. The Mace oil is helpful in relieving congestion and flatulence."
     },
     {
         "name": "Turmeric",
-        "price": "$100",
+        "price": 10,
+        "vendor": "Organic Spices Ltd",
+        "quantity": 50,
         "img": "https://i.ibb.co/5GBrGcg/turmeric.jpg",
         "description": "The spice of every Indian household, Turmeric is the quintessential Indian spice that is used for every Indian food. The golden powder is actually a root vegetable that looks similar to ginger. Turmeric is known to improve condition which may lower chances of any heart-related diseases. It also helps in digestion of food and has anti-bacterial and antioxidant properties."
     },
     {
         "name": "Cinnamon",
-        "price": "$120",
+        "price": 10,
+        "vendor": "Organic Spices Ltd",
+        "quantity": 50,
         "img": "https://i.ibb.co/kH3M9qw/cinnamon.jpg",
         "description": "This is one of the few spices which is popular throughout the world. From Asia to Europe to America, Cinnamon is used for various uses; such as cooking savoury dishes to making pies and rolls and sweet dishes, to making perfumes and medicines. As delicious as it is, it also is known for its good health benefits. Intake of Cinnamon in our diet is known to decrease the blood sugar level as well as the cholesterol level and also keep our heart healthy. The oil derived from Cinnamon is also used to treat and heal tooth decay and gum diseases."
     },
     {
         "name": "Bay Leaf",
-        "price": "$150",
+        "price": 10,
+        "vendor": "Organic Spices Ltd",
+        "quantity": 50,
         "img": "https://i.ibb.co/231ZX4s/bayleaf.jpg",
         "description": "The aromatic Bay Leaves were believed to be a symbol of wisdom, protection and peace by the Ancient Greeks. Besides the fragrance, the Tej Pata is good for detoxification of our body, managing diabetes and also helpful for slowing the process of aging."
     },
     {
         "name": "Fennel",
-        "price": "$150",
+        "price": 10,
+        "vendor": "Organic Spices Ltd",
+        "quantity": 50,
         "img": "https://i.ibb.co/YtBkV1s/fennel.jpg",
         "description": "The famous Saumph is wonderful as a spice because it has that lovely sweet kind of smell which taste great with fish and meat and also good as a sweet refreshment at the end of a meal. However, these little fennel seeds actually contains high amount of iron and calcium and also is a good source of fibre. So even without the extra medicines, the regular intake of saumph will help in providing your body with those extra minerals."
     },
     {
         "name": "Star Anise",
-        "price": "$150",
+        "price": 10,
+        "vendor": "Organic Spices Ltd",
+        "quantity": 50,
         "img": "https://i.ibb.co/K9R11cB/star-anise.jpg",
         "description": "The spice that originated from the fareast is now gaining an important role in the Indian culinary world. All the way from China, Star anise is our 13th spice. High in Vitamin A and Vitamin C and enriched with anti-oxidants, the star shaped spice is known to fight ageing and diabetes. The oil from the Star Anise is also used to treat nausea, cough, and flu."
     },
     {
         "name": "Curry Leaves",
-        "price": "$150",
+        "price": 10,
+        "vendor": "Organic Spices Ltd",
+        "quantity": 50,
         "img": "https://i.ibb.co/pJzRYYY/curry-leaves-1.jpg",
         "description": "The Curry Leaves is widely used in the southern region of India for cooking purposes because of its flavour. The best way to intake minerals is through our food and consuming curry leaves is beneficial for our body more than we know it. The curry leaves is filled with antioxidants and anti-diabetic properties. It is known to lower the cholesterol level and fight leukaemia."
     },
     {
         "name": "Caraway Seeds",
-        "price": "$150",
+        "price": 10,
+        "vendor": "Organic Spices Ltd",
+        "quantity": 50,
         "img": "https://i.ibb.co/h8TJwnF/kala-jeera.jpg",
         "description": "The Kala Jeera is known to relieve heartburns, lower cholesterol, and fight type-2 diabetes. The oil of the Caraway Seeds is also used as an antiseptic and also used as a treatment for relieving toothaches and gum problems."
     },
     {
         "name": "Nigella Seeds",
-        "price": "$150",
+        "price": 10,
+        "vendor": "Organic Spices Ltd",
+        "quantity": 50,
         "img": "https://i.ibb.co/tb7DRVB/kalonji.jpg",
         "description": "The tiny black seeds that are used in biscuits or other snacks have been proven to improve the hair and skin condition of a person. The other benefits include liver detoxification and weight loss. So many wonders from the seed that is smaller than a grain of rice."
     },
     {
         "name": "Mint",
-        "price": "$150",
+        "price": 10,
+        "vendor": "Organic Spices Ltd",
+        "quantity": 50,
         "img": "https://i.ibb.co/8mtFLTD/pudina-3.jpg",
         "description": "Who does not love a good refreshing mint drink or some mint chutney to satiate the cravings? As good and refreshing as it is, the fragrant mint is helpful in fighting sickness and nausea, just a quick sniff or a small intake of the leaf can relieve the uneasy feeling. The aroma also helps activate the gland that secretes digestive enzymes, which in turn helps with digestion."
     },
     {
         "name": "Dill",
-        "price": "$150",
+        "price": 10,
+        "vendor": "Organic Spices Ltd",
+        "quantity": 50,
         "img": "https://i.ibb.co/RjLWM2K/soa.jpg",
         "description": "The benefits of eating and consuming dill are listed as: ability to have deep sleep and treat for insomnia, antimicrobial activity which helps in keeping our body safe from microbial infections, and also the Dill provides good amount of calcium to our body."
     },
     {
         "name": "Carom",
-        "price": "$150",
+        "price": 10,
+        "vendor": "Organic Spices Ltd",
+        "quantity": 50,
         "img": "https://i.ibb.co/2y5RYxk/ajwain.jpg",
         "description": "The black coloured seed more commonly known as Ajwain is a powerhouse of health benefiting properties. The intake of ajwain is good for fighting cold and also acts as an instant stomach pain reliever. It also helps in filtering and removing stones from the kidney."
     },
     {
         "name": "Mustard Seeds",
-        "price": "$150",
+        "price": 10,
+        "vendor": "Organic Spices Ltd",
+        "quantity": 50,
         "img": "https://i.ibb.co/cyfyWWw/sarso.jpg",
         "description": "The little black and yellow seeds from the mustard plant is perhaps one of the most important seeds to the Indians in general; the reason for it being the multi-purpose uses it has on the daily Indian household. The oil of the mustard oil is used for massages and has proven to relieve the muscle pains."
     }
