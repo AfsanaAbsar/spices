@@ -11,9 +11,7 @@ const Banner = () => {
                 <img className='ms-auto' src={banner} alt="" />
 
             </div>
-            {/* <div>
-                <img src={banner2} className='w-100' alt="" />
-            </div> */}
+
         </>
     );
 };
