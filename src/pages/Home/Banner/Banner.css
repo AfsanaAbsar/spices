@@ -1,12 +1,35 @@
-.banner {
-    align-items: center;
-    justify-content: space-between;
-    background-color: #F3F7FA;
+.banner-img {
+    background-image: url('../../../images/masala2.jpg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 780px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+
 }
 
+.btn {
+    background-color: #c82323;
+    border: none;
+    color: white;
+    padding: 16px 50px;
+    text-align: center;
+    font-size: 16px;
 
+    opacity: 1;
+    transition: 0.3s;
+}
 
-.banner img {
-    width: 500px;
+.btn:hover {
+    border: 2px solid #c82323;
+    background-color: #c823230d;
+    color: white;
+}
+
+.year-display {
+    font-family: 'Smooch', cursive;
+    color: #c82323;
+    font-size: 50px;
 
 }

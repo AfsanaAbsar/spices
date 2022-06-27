@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import './Login.css'
 import auth from '../../firebase.init';
+import Social from '../Social/Social';
 const Login = () => {
     const [
         signInWithEmailAndPassword,
@@ -36,6 +37,7 @@ const Login = () => {
                 <button type="submit">Login</button>
             </form>
             <p>new to cuisine? <a onClick={navigateRegister}>register</a></p>
+            <Social></Social>
         </div>
     );
 };

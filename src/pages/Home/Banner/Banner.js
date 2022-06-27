@@ -1,15 +1,17 @@
 import React from 'react';
 import './Banner.css'
-import banner from '../../../images/bannernew.jpeg'
-import banner2 from '../../../images/section.png'
+
 const Banner = () => {
     return (
         <>
-            <div className='banner d-flex '>
+            <div className="banner-img  d-flex align-items-center justify-content-center mb-5">
+                <div className="text-center mt-3">
 
-                <div className='text-align-center'><h1 className='banner-text text-align-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ducimus, fugiat quis magnam commodi tempora, tenetur non atque optio deleniti labore sed! Voluptatibus commodi sapiente quisquam at cupiditate repudiandae unde dicta, deserunt expedita fuga repellat ducimus illum sit pariatur debitis beatae ullam quis reiciendis, esse ea officia! Iste, perspiciatis aut.</h1></div>
-                <img className='ms-auto' src={banner} alt="" />
+                    <h1 className="text-white">Join With Cuisine</h1>
+                    <h3 className="text-white">Serving The Original Flavour <span className='year-display'>Since 2000</span></h3>
+                    <button className="mt-3 btn">Explore more</button>
 
+                </div>
             </div>
 
         </>

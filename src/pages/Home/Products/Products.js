@@ -9,9 +9,11 @@ const Products = () => {
         <div>
             {
                 spices.map(spice => <AllProducts
+                    key={spice._id}
                     spice={spice}
 
                 ></AllProducts>)
+
             }
         </div>
     );
