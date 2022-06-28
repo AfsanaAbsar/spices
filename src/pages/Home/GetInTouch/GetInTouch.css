@@ -1,0 +1,37 @@
+.getintouch {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.getintouch img {
+    width: 100%;
+}
+
+.getintouch-input input,
+textarea {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 30px;
+
+}
+
+.getintouch-input {
+    margin-left: 200px;
+}
+
+@media only screen and (max-width: 800px) {
+    .getintouch {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .getintouch-input {
+        margin-left: 0;
+
+    }
+}

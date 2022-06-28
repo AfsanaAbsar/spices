@@ -1,0 +1,30 @@
+.deliver-btn,
+.manage-btn {
+
+    background-color: #8e1111;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    font-size: 16px;
+
+
+
+}
+
+.restock-btn {
+    background-color: white;
+    border: 1px solid #8e1111;
+    color: #8e1111;
+    padding: 12px 30px;
+    text-align: center;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 800px) {
+    .card-btn {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+}

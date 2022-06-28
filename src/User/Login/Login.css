@@ -1,0 +1,17 @@
+.login-input input {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 30px;
+}
+
+.login-input {
+    display: flex;
+    align-items: center;
+}
+
+/* .login-btn{
+    border: none;
+    background-color: #8e1111;
+    color: white;
+    padding: 10px 20px;
+} */

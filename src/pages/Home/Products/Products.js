@@ -6,7 +6,7 @@ const Products = () => {
 
     const [spices, setSpices] = useSpices()
     return (
-        <div>
+        <div className='product-card-home container mt-5'>
             {
                 spices.map(spice => <AllProducts
                     key={spice._id}

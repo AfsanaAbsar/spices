@@ -1,0 +1,17 @@
+.social-link {
+    background-color: #8e1111;
+    height: 50px;
+}
+
+.social-link i {
+    font-size: 30px;
+    color: rgb(249, 231, 231);
+    justify-content: center;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .social-link {
+        margin: 0;
+    }
+}

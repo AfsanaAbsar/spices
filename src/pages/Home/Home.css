@@ -3,3 +3,23 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
 }
+
+.section-title {
+    text-align: center;
+    color: #c82323;
+}
+
+.manage-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    .product-card-home {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+        margin: 0;
+
+    }
+}

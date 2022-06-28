@@ -8,14 +8,14 @@ const AllProducts = (props) => {
         navigate(`/product/${id}`)
     }
     return (
-        <div className='product'>
+        <div className='product m-0'>
             <img src={img} alt="" />
-            <p>{name}</p>
-            <p>{price}</p>
+            <h3 className='product-name pt-4'>{name}</h3>
+            <h5>Price : ${price}</h5>
             <p>{description}</p>
-            <p>{vendor}</p>
-            <p>{quantity}</p>
-            <button onClick={() => navigateToProductDetails(_id)}>order</button>
+            <h5>Vendor: {vendor}</h5>
+            <h5>Available : {quantity} kg</h5>
+            <button className='product-btn' onClick={() => navigateToProductDetails(_id)}>Stock Details <i className="fas fa-long-arrow-alt-right"></i></button>
         </div>
     );
 };

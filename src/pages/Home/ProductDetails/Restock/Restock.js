@@ -8,20 +8,20 @@ const Restock = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => {
-                // console.log(data);
+
                 setProducts(data)
             }
             )
     }, [productId])
     const { quantity } = products;
-    // console.log(quantity);
+
     const handleRestock = (e) => {
         e.preventDefault();
         if (quantity) {
             const addedQuantity = e.target.quantity.value;
             console.log(addedQuantity);
             const updatedQuantity = parseInt(quantity) + parseInt(addedQuantity);
-            // console.log(updatedQuantity);
+
             const url = `http://localhost:5000/product/${productId}`
             fetch((url), {
                 method: 'PUT',
@@ -32,17 +32,20 @@ const Restock = () => {
             })
                 .then(res => res.json())
                 .then(data => {
-                    // console.log(data);
+
                     alert('Restocked Successfully')
+                    e.target.reset()
+                    window.location.reload();
 
                 })
+
         }
     }
     return (
         <div>
             <form onSubmit={handleRestock}>
-                <input type="number" name='quantity' />
-                <button type='submit'>Restock</button>
+                <input placeholder='Enter Amount' type="number" name='quantity' />
+                <button className='border-0 p-1 text-white bg-dark' type='submit'>Restock</button>
             </form>
         </div>
 

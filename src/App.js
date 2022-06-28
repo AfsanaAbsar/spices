@@ -10,6 +10,7 @@ import Register from './User/Register/Register';
 import ProductDetails from './pages/Home/ProductDetails/ProductDetails';
 import ManageProducts from './pages/ManageProducts/ManageProducts';
 import AddProduct from './pages/AddProduct/AddProduct';
+import Footer from './pages/Footer/Footer';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/manage" element={<ManageProducts />} />
         <Route path="/add" element={<AddProduct />} />
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

@@ -30,13 +30,16 @@ const Login = () => {
         navigate('/home')
     }
     return (
-        <div>
-            <form onSubmit={handleFormSubmit}>
-                <input ref={emailRef} type="text" placeholder='email' />
-                <input ref={passwordRef} type="text" placeholder='password' />
-                <button type="submit">Login</button>
-            </form>
-            <p>new to cuisine? <a onClick={navigateRegister}>register</a></p>
+        <div className=''>
+            <div className='login-input container'>
+                <form onSubmit={handleFormSubmit}>
+                    <input ref={emailRef} type="text" placeholder='email' />
+                    <input ref={passwordRef} type="text" placeholder='password' />
+                    <button className='mt-5 manage-btn' type="submit">Login</button>
+                </form>
+
+            </div>
+            <p>new to cuisine? <button className='manage-btn' onClick={navigateRegister}>register</button></p>
             <Social></Social>
         </div>
     );

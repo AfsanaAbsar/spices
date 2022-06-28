@@ -1,0 +1,15 @@
+.partner {
+    display: flex;
+    align-items: center;
+
+}
+
+.partner img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    .partner {
+        margin: 0;
+    }
+}
