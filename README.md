@@ -4,8 +4,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
-
+Cuisine Is a spice warehouse management website [CUISINE](https://cuisine-react-firebase.web.app/)
+## It's functionality is---
+** It is a multi vendor website
+** One can mange products after sign in to website 
+** signed in person can restock and deliver products
+** signed in person also can add and delete products
 ### `npm start`
 
 Runs the app in the development mode.\
