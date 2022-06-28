@@ -11,6 +11,9 @@ import ProductDetails from './pages/Home/ProductDetails/ProductDetails';
 import ManageProducts from './pages/ManageProducts/ManageProducts';
 import AddProduct from './pages/AddProduct/AddProduct';
 import Footer from './pages/Footer/Footer';
+import RequireAuth from './User/RequireAuth/RequireAuth';
+import Blogs from './pages/Blogs/Blogs';
+import NotFound from './pages/NotFound/NotFound';
 
 
 function App() {
@@ -22,11 +25,15 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/product/:productId" element={<ProductDetails />} />
+        <Route path="/blogs" element={<Blogs />} />
+
+        <Route path="/product/:productId" element={<RequireAuth><ProductDetails /></RequireAuth>} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/manage" element={<ManageProducts />} />
-        <Route path="/add" element={<AddProduct />} />
+        <Route path="/manage" element={<RequireAuth><ManageProducts /></RequireAuth>} />
+        <Route path="/add" element={<RequireAuth><AddProduct /></RequireAuth>} />
+        <Route path="*" element={<NotFound></NotFound>} />
+
       </Routes>
       <Footer></Footer>
     </div>

@@ -1,9 +1,11 @@
 import React, { useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import './Login.css'
 import auth from '../../firebase.init';
 import Social from '../Social/Social';
+
+
 const Login = () => {
     const [
         signInWithEmailAndPassword,
@@ -26,22 +28,28 @@ const Login = () => {
         signInWithEmailAndPassword(email, password)
 
     }
+
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
     if (user) {
-        navigate('/home')
+        navigate(from, { replace: true });
     }
     return (
-        <div className=''>
-            <div className='login-input container'>
+        <div className='text-center'>
+            <div className='login-input mx-auto '>
                 <form onSubmit={handleFormSubmit}>
-                    <input ref={emailRef} type="text" placeholder='email' />
-                    <input ref={passwordRef} type="text" placeholder='password' />
-                    <button className='mt-5 manage-btn' type="submit">Login</button>
-                </form>
+                    <input ref={emailRef} type="text" className='w-25' placeholder='Enter Your Email' /><br />
+                    <input ref={passwordRef} type="text" className='w-25' placeholder='Enter Your Password' /><br />
+                    <button className='mt-5 manage-btn w-25' type="submit">Login</button>
+                </form><br />
 
             </div>
-            <p>new to cuisine? <button className='manage-btn' onClick={navigateRegister}>register</button></p>
-            <Social></Social>
+            <p className='text-center'>New To CUISINE? <button className='border-0 bg-dark text-white' onClick={navigateRegister}>Register</button></p>
+            <div className='text-center'> <Social></Social></div>
+
         </div>
+
+
     );
 };
 

@@ -4,7 +4,7 @@ const Restock = () => {
     const { productId } = useParams();
     const [products, setProducts] = useState({})
     useEffect(() => {
-        const url = `http://localhost:5000/product/${productId}`
+        const url = `https://infinite-hamlet-52819.herokuapp.com/product/${productId}`
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -22,7 +22,7 @@ const Restock = () => {
             console.log(addedQuantity);
             const updatedQuantity = parseInt(quantity) + parseInt(addedQuantity);
 
-            const url = `http://localhost:5000/product/${productId}`
+            const url = `https://infinite-hamlet-52819.herokuapp.com/product/${productId}`
             fetch((url), {
                 method: 'PUT',
                 headers: {

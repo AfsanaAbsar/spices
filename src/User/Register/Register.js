@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import Social from '../Social/Social';
@@ -28,21 +28,25 @@ const Register = () => {
         createUserWithEmailAndPassword(email, password)
 
     }
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
     if (user) {
-        navigate('/home')
+        navigate(from, { replace: true });
     }
 
 
     return (
-        <div>
-            <form onSubmit={handleFormSubmit}>
-                <input ref={nameRef} type="text" placeholder='name' />
-                <input ref={emailRef} type="text" placeholder='email' />
-                <input ref={passwordRef} type="text" placeholder='password' />
-                <button type="submit">Register</button>
-            </form>
-            <p>allready have? <a onClick={navigateLogin}>login</a></p>
-            <Social></Social>
+        <div className='text-center'>
+            <div className='login-input mx-auto '>
+                <form onSubmit={handleFormSubmit}>
+                    <input ref={nameRef} type="text" className='w-25' placeholder='Enter Your Name' /><br />
+                    <input ref={emailRef} type="text" className='w-25' placeholder='Enter Your Email' /><br />
+                    <input ref={passwordRef} type="text" className='w-25' placeholder='Enter Your Password' /><br />
+                    <button className='mt-5 manage-btn w-25' type="submit">Register</button>
+                </form>
+            </div>
+            <p className='text-center mt-5'>Already Have An Account? <button className='border-0 bg-dark text-white' onClick={navigateLogin}>LogIn</button></p>
+            <div className='text-center'> <Social></Social></div>
         </div>
     );
 };

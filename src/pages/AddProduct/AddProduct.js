@@ -6,7 +6,7 @@ const AddProduct = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = (data, e) => {
 
-        const url = `http://localhost:5000/product`
+        const url = `https://infinite-hamlet-52819.herokuapp.com/product`
         fetch(url, {
             method: 'POST',
             headers: {
