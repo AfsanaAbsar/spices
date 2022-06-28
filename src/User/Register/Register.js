@@ -5,7 +5,9 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import Social from '../Social/Social';
 import { Spinner } from 'react-bootstrap';
+
 const Register = () => {
+
     const [
         createUserWithEmailAndPassword,
         user,
@@ -39,6 +41,9 @@ const Register = () => {
     }
 
 
+
+
+
     return (
         <div className='text-center'>
             <div className='login-input mx-auto '>
@@ -49,6 +54,8 @@ const Register = () => {
                     <button className='mt-5 manage-btn w-25' type="submit">Register</button>
                 </form>
             </div>
+
+
             <p className='text-center mt-5'>Already Have An Account? <button className='border-0 bg-dark text-white' onClick={navigateLogin}>LogIn</button></p>
             <div className='text-center'> <Social></Social></div>
         </div>

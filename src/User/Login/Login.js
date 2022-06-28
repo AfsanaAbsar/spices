@@ -5,9 +5,10 @@ import './Login.css'
 import auth from '../../firebase.init';
 import Social from '../Social/Social';
 import { Spinner } from 'react-bootstrap';
-
+import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
 
 const Login = () => {
+    const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
     const [
         signInWithEmailAndPassword,
         user,
@@ -40,6 +41,10 @@ const Login = () => {
     if (loading) {
         return <Spinner animation="grow" className='mx-auto' />
     }
+    const resetPassword = async () => {
+        await sendPasswordResetEmail(emailRef);
+        alert('sent email')
+    }
     return (
         <div className='text-center'>
             <div className='login-input mx-auto '>
@@ -50,6 +55,7 @@ const Login = () => {
                 </form><br />
 
             </div>
+            <p>Forgot Password ?<a onClick={resetPassword}> Reset Password</a></p>
             <p className='text-center'>New To CUISINE? <button className='border-0 bg-dark text-white' onClick={navigateRegister}>Register</button></p>
             <div className='text-center'> <Social></Social></div>
 
