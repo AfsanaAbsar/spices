@@ -4,6 +4,7 @@ import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import './Login.css'
 import auth from '../../firebase.init';
 import Social from '../Social/Social';
+import { Spinner } from 'react-bootstrap';
 
 
 const Login = () => {
@@ -18,6 +19,7 @@ const Login = () => {
         navigate('/register')
     }
 
+
     const emailRef = useRef();
     const passwordRef = useRef();
     const handleFormSubmit = e => {
@@ -29,10 +31,14 @@ const Login = () => {
 
     }
 
+
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
     if (user) {
         navigate(from, { replace: true });
+    }
+    if (loading) {
+        return <Spinner animation="grow" className='mx-auto' />
     }
     return (
         <div className='text-center'>

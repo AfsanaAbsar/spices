@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import Social from '../Social/Social';
+import { Spinner } from 'react-bootstrap';
 const Register = () => {
     const [
         createUserWithEmailAndPassword,
@@ -32,6 +33,9 @@ const Register = () => {
     let from = location.state?.from?.pathname || "/";
     if (user) {
         navigate(from, { replace: true });
+    }
+    if (loading) {
+        return <Spinner animation="grow" className='mx-auto' />
     }
 
 
