@@ -13,8 +13,9 @@ const Restock = () => {
             }
             )
     }, [productId])
-    const { quantity } = products;
 
+
+    const { quantity } = products;
     const handleRestock = (e) => {
         e.preventDefault();
         if (quantity) {
@@ -36,9 +37,7 @@ const Restock = () => {
                     alert('Restocked Successfully')
                     e.target.reset()
                     window.location.reload();
-
                 })
-
         }
     }
     return (
@@ -48,7 +47,6 @@ const Restock = () => {
                 <button className='border-0 p-1 text-white bg-dark' type='submit'>Restock</button>
             </form>
         </div>
-
     );
 };
 
